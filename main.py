@@ -1,2 +1,2 @@
-def get_average(l):
-    return sum(l)/len(l)
+def desc_df(df):
+    return df.describe()
