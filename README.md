@@ -4,9 +4,6 @@
 
 ## Week 2 Pandas Descriptive Statistics Script
 
-
-
-
 This repo contains: 
 
 - .devcontainer     
@@ -17,3 +14,10 @@ This repo contains:
 - requirements.txt      
 - main.py   
 - test_main.py
+
+## Purpose
+The purpose of this project is using the `Pandas` to show statistics descriptions. The author use a `pd.DataFrame` as a sample data and test its descriptions. 
+
+## Preparation
+1. Codespaces
+2. 
