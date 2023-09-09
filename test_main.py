@@ -1,16 +1,20 @@
-from main import desc_df
+from main import desc_df, bar_plot
 import pandas as pd
+import matplotlib as plt
 
-# 
-df = pd.read_csv()
+# Elextrix Vehicle Population Data
+df = pd.read_csv('Electric_Vehicle_Population_Data.csv')
 
 
 def test_main():
-    desc = desc_df(df)
-    assert desc.loc['count'][0] == 5.0
-    assert desc.loc['mean'][0] == 27600.0
-    assert desc.loc['min'][0] == 22000.0
+    # mean
+    assert desc_df(df).loc['mean', 'Electric Range'] == 70.49573804284242
+    # median
+    assert desc_df(df).loc['50%', 'Model Year'] == 2021.0
+    # standard deviation
+    assert desc_df(df).loc['std', 'Electric Range'] == 97.1287349778698
 
-
+    # Here we can focus on the visualization of Electric Range using a 
+    bar_plot(df['Electric Range'])
 
 
