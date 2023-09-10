@@ -8,6 +8,7 @@ df = pd.read_csv("Electric_Vehicle_Population_Data.csv")
 
 def test_desc_df():
     # mean
+    print(desc_df(df).loc["mean", "Electric Range"], desc_df(df).loc["50%", "Model Year"], desc_df(df).loc["std", "Electric Range")
     assert desc_df(df).loc["mean", "Electric Range"] == 70.49573804284242
     # median
     assert desc_df(df).loc["50%", "Model Year"] == 2021.0
