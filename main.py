@@ -1,5 +1,5 @@
 # import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 def desc_df(df):
     return df.describe()
