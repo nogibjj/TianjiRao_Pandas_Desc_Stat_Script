@@ -16,7 +16,7 @@ def bar_plot_save(df):
 def save_to_md(df):
     tab1 = df.describe()
     bar_plot_save(df)
-    with open("congress_summary.md", "w", encoding="utf-8") as file:
+    with open("summary.md", "w", encoding="utf-8") as file:
         file.write("Statistical Describe:\n")
         file.write(tab1)
         file.write("\n\n") 
